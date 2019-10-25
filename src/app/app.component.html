@@ -1,0 +1,22 @@
+<div class="container">
+     <div class="row">
+         <table class="table">
+             <thead class="thead-inverse">
+             <tr>
+                 <th class="text-center">ID</th>
+                 <th class="text-center">Name</th>
+                 <th class="text-center">Description</th>
+                 <th class="text-center">Status</th>
+             </tr>
+             </thead>
+             <tbody>
+             <tr *ngFor="let branch of branches">
+                 <td class="text-center" style="width: 15px;">{{branch.Id}}</td>
+                 <td class="text-center" style="width: 15px;">{{branch.Name}}</td>
+                 <td class="text-center" style="width: 200px;">{{branch.Description}}</td>
+                 <td class="text-center">{{branch.Status}}</td>
+             </tr>
+             </tbody>
+         </table>
+     </div>
+ </div>
